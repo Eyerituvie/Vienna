@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8e9">
+  <title>Maths Made Fun!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Maths Made Fun home">
+        <span class="brand-mark" aria-hidden="true">➕</span>
+        <span>Maths Made Fun!</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#learn">What you'll learn</a>
+        <a href="#quiz">Play the quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="learn">
+        <div class="hero-copy">
+          <p class="eyebrow">⭐ Big fun, little numbers</p>
+          <h1>Maths is<br><span>an adventure!</span></h1>
+          <p>Count, add, and solve your way to becoming a maths superstar. Ready to give your brain a happy workout?</p>
+          <a class="primary-button" href="#quiz">Let's play! <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <span class="floaty one">7</span>
+          <span class="mascot">🦉</span>
+          <span class="floaty two">★</span>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Maths activities">
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">🔢</span>
+          <div><h2>Count it out</h2><p>Numbers are everywhere!</p></div>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">🧩</span>
+          <div><h2>Crack the puzzle</h2><p>Think, try, and solve.</p></div>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">🏆</span>
+          <div><h2>Shine bright</h2><p>Every answer makes you stronger.</p></div>
+        </article>
+      </section>
+
+      <section id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">🎯 Your turn!</p>
+            <h2 id="quiz-title">The Number Ninja Quiz</h2>
+          </div>
+          <p>10 questions · No rush · Have fun!</p>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-top">
+            <span class="quiz-label" id="question-count">Ready when you are!</span>
+            <span class="score-pill" aria-live="polite">⭐ Score: <span id="score">0</span></span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-labels" aria-hidden="true"><span>Start</span><span>Finish line</span></div>
+
+          <div class="question-area">
+            <h3 id="question" aria-live="polite">Ready to warm up your brain?</h3>
+            <div class="answers" id="answers" role="group" aria-label="Choose your answer"></div>
+            <p class="feedback" id="feedback" aria-live="polite">Press start when you're ready!</p>
+          </div>
+
+          <div class="quiz-bottom">
+            <button class="secondary-button hidden" id="restart-button" type="button">Play again</button>
+            <button class="primary-button" id="start-button" type="button">Start quiz <span aria-hidden="true">→</span></button>
+            <button class="primary-button hidden" id="next-button" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Keep curious, keep counting, and remember: practice makes progress! 🌈</footer>
+  </div>
+</body>
+</html>
